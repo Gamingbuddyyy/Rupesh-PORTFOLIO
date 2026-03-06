@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEC-REPORT // Rupesh Singh Chauhan</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;800&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="matrix"></canvas>
+
+<nav>
+<div class="nav-container">
+<div class="logo">SINGH<span>_CHAUHAN</span></div>
+<div class="nav-links">
+<a href="#about">WHOAMI</a>
+<a href="#reports">INTELLIGENCE</a>
+<a href="#achievements">ACCREDITATION</a>
+<a href="#community">FEEDBACK</a>
+</div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="terminal-container">
+<div class="terminal-bar">
+<span class="btn-t red"></span><span class="btn-t yellow"></span><span class="btn-t green"></span>
+<span class="title">terminal — rupesh@hazaribagh — 80x24</span>
+</div>
+<div class="terminal-content">
+<p class="cmd"><span>$</span> whoami</p>
+<h1>RUPESH SINGH CHAUHAN</h1>
+<p class="cmd"><span>$</span> role --get</p>
+<p class="res">Web Application Security Researcher | Bug Bounty Hunter</p>
+<p class="cmd"><span>$</span> status --check</p>
+<p class="res neon-glow">>> [SYSTEMS ACTIVE] // [THREAT_HUNTING: ENABLED]</p>
+<div class="cta-btns">
+<button onclick="document.getElementById('reports').scrollIntoView()">ACCESS_DATABASE</button>
+<a href="https://linkedin.com/in/rupesh-singh-chauhan" target="_blank" class="btn-ghost">CONNECT_LINKEDIN</a>
+</div>
+</div>
+</div>
+</header>
+
+<section id="about" class="container">
+<div class="glass-card">
+<h2 class="section-label">01 // THE_RESEARCHER</h2>
+
+<div class="about-grid">
+<div class="edu-terminal">
+<h3>[EDUCATION_HISTORY]</h3>
+<div class="edu-item">
+<span class="year">PRESENT</span>
+<p><strong>B.Tech in Computer Science</strong></p>
+<p class="loc">Ramgarh Engineering College</p>
+</div>
+<div class="edu-item">
+<span class="year">DIPLOMA</span>
+<p><strong>KK Polytechnic</strong></p>
+<p class="loc">Score: 70.5%</p>
+</div>
+<div class="edu-item">
+<span class="year">SECONDARY</span>
+<p><strong>DAV Public School</strong></p>
+<p class="loc">Grade: 6.4 CGPA</p>
+</div>
+</div>
+
+<div class="skills-content">
+<p class="bio-text">
+Currently a Computer Science student (Exp. 2027) based in Jharkhand.
+I specialize in manual security testing, focusing on parameter manipulation
+and analyzing HTTP traffic to expose vulnerabilities in enterprise architectures.
+</p>
+
+<h3>[CORE_COMPETENCIES]</h3>
+<div class="skill-tags">
+<span class="tag">Burp Suite</span>
+<span class="tag">Linux</span>
+<span class="tag">Penetration Testing</span>
+<span class="tag">Web & API Security</span>
+<span class="tag">Wireshark</span>
+<span class="tag">OWASP Top 10</span>
+<span class="tag">Nmap</span>
+<span class="tag">HTTP Analysis</span>
+<span class="tag">Red Teaming</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="reports" class="container">
+<div class="section-header">
+<h2 class="section-label">02 // VULNERABILITY_FEED</h2>
+<div class="filter-controls">
+<input type="text" id="reportSearch" placeholder="Search targets (OYO, IDOR...)" onkeyup="filterReports()">
+</div>
+</div>
+
+<div class="grid" id="reportGrid">
+</div>
+
+<div class="admin-ui">
+<button class="add-btn" onclick="openModal('reportModal')">+ INJECT_NEW_REPORT</button>
+</div>
+</section>
+
+<section id="achievements" class="container">
+<h2 class="section-label">03 // ACCREDITATION_LOGS</h2>
+<div class="achievement-grid">
+<div class="ach-card"><h3>OYO</h3><p>Hall of Fame Recognition</p></div>
+<div class="ach-card"><h3>UDEMY</h3><p>Certified in Cyber Security & Ethical Hacking (2026)</p></div>
+<div class="ach-card"><h3>Deloitte</h3><p>Security Testing Certificate</p></div>
+<div class="ach-card"><h3>Bugcrowd</h3><p>Recognized Contributor</p></div>
+</div>
+</section>
+
+<section id="community" class="container">
+<h2 class="section-label">04 // COMMUNITY_DECRYPTION</h2>
+<div class="comment-system">
+<div id="commentList"></div>
+<div class="comment-inputs">
+<input type="text" id="commentUser" placeholder="Alias">
+<textarea id="commentText" placeholder="Drop a doubt or correction..."></textarea>
+<button onclick="saveComment()">POST_MESSAGE</button>
+</div>
+</div>
+</section>
+
+<div id="reportModal" class="modal">
+<div class="modal-content">
+<h3>LOG NEW DISCOVERY</h3>
+<input type="text" id="newTitle" placeholder="Vulnerability Title (e.g. IDOR)">
+<input type="text" id="newPlatform" placeholder="Platform (e.g. OYO)">
+<select id="newSev">
+<option value="CRITICAL">CRITICAL</option>
+<option value="HIGH">HIGH</option>
+<option value="MEDIUM">MEDIUM</option>
+<option value="LOW">LOW</option>
+</select>
+<input type="text" id="newImg" placeholder="Image URL (Proof Screenshot)">
+<textarea id="newDesc" placeholder="Brief technical description..."></textarea>
+<div class="modal-btns">
+<button onclick="addReport()">SUBMIT</button>
+<button class="btn-ghost" onclick="closeModal('reportModal')">CANCEL</button>
+</div>
+</div>
+</div>
+
+<footer>
+<div class="footer-links">
+<a href="https://github.com/gamingbuddyyy">GITHUB</a>
+<a href="https://bugcrowd.com/zordanislive">BUGCROWD</a>
+<a href="mailto:rupesh@example.com">EMAIL</a>
+</div>
+<p> LETS GET CONNECTED // RUPESH SINGH CHAUHAN // 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
