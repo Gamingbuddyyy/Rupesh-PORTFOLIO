@@ -26,8 +26,8 @@ setInterval(drawMatrix, 50);
 
 // 2. REPORT DATABASE
 let reports = [
-{ title: "IDOR on User Profile API", platform: "OYO", sev: "HIGH", img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500", desc: "Manual parameter manipulation allowed viewing other guest details." },
-{ title: "Business Logic - Payment Bypass", platform: "Zomato", sev: "CRITICAL", img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500", desc: "Detected flaw in rounding mechanism during checkout flow." }
+{ title: "Server Security Misconfiguration", Program: "OYO", sev: "HIGH", img: "https:\/\/h.uguu.se\/paCmiBpb.jpeg", desc: "Broken Authentication or Misconfiguration can lead to unauthorised access and can cause serious security impact!" },
+{ title: "Business Logic - Payment Bypass", Program: "Commudle", sev: "CRITICAL", img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500", desc: "Detected flaw in rounding mechanism during checkout flow." }
 ];
 
 function renderReports(filteredReports = reports) {
