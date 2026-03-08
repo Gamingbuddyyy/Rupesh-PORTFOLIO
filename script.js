@@ -26,9 +26,9 @@ setInterval(drawMatrix, 50);
 
 // 2. REPORT DATABASE
 let reports = [
-{ title: "Server Security Misconfiguration", Program: "OYO", sev: "HIGH", img: "https:\/\/h.uguu.se\/paCmiBpb.jpeg", desc: "Broken Authentication or Misconfiguration can lead to unauthorised access and can cause serious security impact!" },
-{ title: "Business Logic - Payment Bypass", Program: "Commudle", sev: "CRITICAL", img: "https:\/\/h.uguu.se\/WiBAdQis.jpeg", desc: "Detected flaw in rounding mechanism during checkout flow." }
-{ title: "Identification and Authentication Failures - Insecure password reset flow", Program: "Quitelike", sev: "Medium", img: "https:\/\/h.uguu.se\/KUvuvuPY.jpeg", desc: "Detected unauthorised password reset with only Email." }
+{ title: "Server Security Misconfiguration", platform: "OYO", sev: "HIGH", img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", desc: "Broken Authentication or Misconfiguration can lead to unauthorised access and can cause serious security impact!" },
+{ title: "Business Logic - Payment Bypass", platform: "Commudle", sev: "CRITICAL", img: "https://images.unsplash.com/photo-1518770660439-4636190af475", desc: "Detected flaw in rounding mechanism during checkout flow." },
+{ title: "Identification and Authentication Failures - Insecure password reset flow", platform: "Quitelike", sev: "Medium", img: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87", desc: "Detected unauthorised password reset with only Email." }
 ];
 
 function renderReports(filteredReports = reports) {
