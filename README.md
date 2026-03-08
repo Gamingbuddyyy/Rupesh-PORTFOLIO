@@ -3,7 +3,7 @@
 A high-performance, terminal-themed security portfolio and vulnerability feed. Built for showcasing bug bounty reports and security research.
 
 ## 🚀 Live Demo
-Check out the live site here: [INSERT YOUR VERCEL LINK HERE]
+Check out the live site here: [https://rupesh-portfolio-pink.vercel.app/]
 
 ## 🛠️ Technical Stack
 - **Frontend:** HTML5, CSS3 (Glassmorphism & Matrix Rain Effect)
